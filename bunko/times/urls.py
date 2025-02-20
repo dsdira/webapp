@@ -67,10 +67,4 @@ urlpatterns = [
 	path('movielist/<id_lista>', views.movielist, name='movielist'),
 
 	path('addwikiphoto/', views.addwikiphoto, name='addwikiphoto'),
-	path('cuadernos/', views.cuadernos, name='cuadernos'),
-	path('addcuaderno/', views.addcuaderno, name='addcuaderno'),
-	path('cuaderno/<c>', views.cuaderno, name='cuaderno'),
-	path('addapunte/', views.addapunte, name='addapunte'),
-	path('editapunte/<aid>', views.editapunte, name='editapunte'),
-	
 	]

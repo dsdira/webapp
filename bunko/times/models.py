@@ -528,26 +528,6 @@ class WikiPhoto(models.Model):
 	def __str__(self):
 		return self.wiki.title
 
-class Cuaderno(models.Model):
-	titulo = models.CharField(max_length=200)
-	fecha_creacion = models.DateTimeField(auto_now=True)
-
-	def __str__(self):
-		return self.titulo
-
-class Apunte(models.Model):
-	cuaderno = models.ForeignKey(Cuaderno, on_delete=models.CASCADE)
-	contenido = models.TextField()
-	fecha_creacion = models.DateTimeField(auto_now=True)
-	subtitulo = models.CharField(max_length=200, null=True, blank=True)
-
-	def __str__(self):
-		return self.cuaderno.titulo
-
-
-
-
-
 
 
 
